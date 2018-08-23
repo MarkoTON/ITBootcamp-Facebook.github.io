@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IT Bootcamp</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body onload="checkLogin(), loadImageData()">
+	
+	<nav class="navbar navbar-expand-lg p-4" style="background-color: #4267b2;">
+		<div class="container">
+			<a class="navbar-brand text-white" href="#">
+				<span class="fejs-font">FLAJBERSKEJP</span>
+				<span class="text-danger header-brand-text">New Best Thing</span>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon btn btn-outline-info btn-lg d-inline">///</span>
+			</button>
+			<!-- <div id="navbar"> -->
+				<ul class="navbar-nav ml-auto" id="navbar">
+					<li class="nav-item active">
+						<a href="home.html" class="text-white nav-link ">Home</a>
+					</li>
+				</ul>
+				<!-- </div> -->
+			</div><!-- container -->
+		</nav>
+		
+		<!-- <div class="container">
+			<div class="header">
+				<div class="brand">
+					<span>FLAJBERSKEJP</span>
+					<span class="text-danger header-brand-text">New Best Thing</span>
+				</div>
+				<div id="navbar">
+					<a href="home.html">Home</a>
+				</div>
+			</div>
+		</div> -->
+		
+
+		<div class="content">
+			<div class="container card">
+									<div id="errors"></div>
+									<div id="success"></div>
+				<div class="row">
+
+					<div class="col-md-9 card-header">
+						<div class="left-sidebar" id="image-container">
+							<div id="image">
+
+							</div><!-- image -->
+						</div><!-- left-sidebar image-container -->
+					</div><!-- col-md-10 -->
+					<div class="col-md-3 card-body">
+						<div class="main-content" id="image-comments-container">
+							<div class="image-meta">
+								<div id="author-image" class="mx-auto w-100">
+									
+								</div>
+								<div id="author-name" class="d-block w-100">
+									
+								</div>
+							</div><!-- image-meta -->
+							<div id="comments">
+
+							</div><!-- comments -->
+							<div class="add-comment">
+								<!-- <label for="new-comment">Insert comment</label> -->
+								<input type="text" id="new-comment" class="form-control mb-3" placeholder="Insert comment" />
+								<button onclick="addComment()" class="btn btn-block btn-primary">Add Comment</button>
+							</div><!-- add-comment -->
+						</div><!-- main-content image-comments-container -->
+					</div><!-- col-md-2 -->
+				</div><!-- row -->
+			</div><!-- container -->
+		</div><!-- content -->
+		
+		
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script src="js/declare.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/image.js"></script>
+	</body>
+	</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IT Bootcamp</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body onload="checkLogin(), loadData()">
+	
+	
+	
+	<nav class="navbar navbar-expand-lg p-4" style="background-color: #4267b2;">
+		<div class="container">
+			
+			<a class="navbar-brand text-white" href="#">
+				<span class="fejs-font">FLAJBERSKEJP</span>
+				<span class="text-danger header-brand-text">New Best Thing</span>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon btn btn-outline-info btn-lg d-inline">///</span>
+			</button>
+			
+			<!-- <div id="navbar"> -->
+					<ul class="navbar-nav ml-auto" id="navbar">
+							<li class="nav-item active">
+								<a href="home.html" class="text-white nav-link ">Home</a>
+							</li>
+					</ul>
+			<!-- </div> -->
+			
+		</div><!-- container -->
+	</nav>
+	
+	<div class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="errors"></div>
+					<div id="success"></div>
+				</div>
+				<div class="col-md-3">
+					<div class="left-sidebar">
+						<div class="col-md-12">
+							<div class="row">
+								<div id="user-image" class="mx-auto">
+
+								</div>
+								<div id="username" class="d-block w-100">
+									
+								</div>
+								<div class="change-profile-image">
+									<!-- <input type="file" id="profile-image" />-->
+									<div class="custom-file">
+										<input type="file" class="custom-file-input" id="profile-image" />
+										<label onclick="changeProfileImage()" class="custom-file-label" for="profile-image">Change Profile Image</label>
+									</div>
+									<button onclick="changeProfileImage()" class="btn btn-primary mt-2 btn-sm btn-block">Change Profile Image</button>
+								</div><!-- change-profile-image -->
+							</div><!-- row -->
+						</div><!-- col-md-12 -->
+					</div><!-- left-sidebar -->
+				</div><!-- col-md-2 -->
+				
+				<div class="col-md-9">
+					<div class="main-content">
+						<div class="new-feed">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="add-feed">
+										<div class="input-group mb-2">
+											<input type="text" id="status" placeholder="What is your mind?" class="form-control" />
+											<div class="input-group-prepend">
+												<div class="input-group-text">
+													<span onclick="addStatus()">Share</span>
+												</div>
+											</div>
+										</div>
+									</div><!-- add-feed -->
+								</div>
+								<div class="col-md-6">
+									<div class="add-image">
+										<div class="custom-file">
+											<input type="file" class="custom-file-input" id="image" />
+											<label class="custom-file-label" for="image">Choose file...</label>
+											<div class="form-group form-check d-inline-block ml-1">
+												<input type="checkbox" class="form-check-input" id="private">
+												<label class="form-check-label" for="private">Private</label>
+											</div>
+											<button onclick="addImage()" class="btn btn-dark m-3">Add Image</button>
+										</div>
+									</div><!-- add-image -->			
+								</div>
+							</div>
+						</div><!-- new-feed -->		
+						<div id="feed-list"></div>
+					</div><!-- main-content -->
+				</div><!-- col-md-10 -->
+			</div><!-- row -->
+			
+		</div><!-- container -->
+	</div><!-- content -->
+	
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/declare.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
