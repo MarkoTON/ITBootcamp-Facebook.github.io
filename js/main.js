@@ -43,9 +43,11 @@ function getStatuses(statuses_for_user = null) {
 					var item = {
 						id: status.id,
 						type: 'status',
-						datetime: status.created_at.replace("_", " "),
+						// datetime: status.created_at.replace("_", " "),
+						datetime: status.created_at.split('_').join(' '),
 						author: status.user_id,
-						content: status.status.replace("_", " "),
+						// content: status.status.replace("_", " "),
+						content: status.status.split('_').join(' '),
 						timestamp: status.timestamp,
 						private: false
 					}
@@ -77,7 +79,8 @@ function getImages(statuses_for_user = null) {
 					var item = {
 						id: image.id,
 						type: 'image',
-						datetime: image.date_uploaded.replace("_", " "),
+						// datetime: image.date_uploaded.replace("_", " "),
+						datetime: image.date_uploaded.split('_').join(' '),
 						author: image.user_id,
 						content: image.name,
 						timestamp: image.timestamp,

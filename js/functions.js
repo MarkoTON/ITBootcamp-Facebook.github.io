@@ -70,7 +70,8 @@ function checkLogin(){
 function replaceUnderscore(){
     let i = 0, strLength = str.length;
     for(i; i < strLength; i++) {
-        str = str.replace("_", " ");
+        // str = str.replace("_", " ");
+        str = str.split('_').join(' ');
     }
     // "_", " "
 }

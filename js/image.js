@@ -93,8 +93,10 @@ function getComments() {
 							id: comment.id,
 							image_id: comment.image_id,
 							user_id: comment.user_id,
-							comment: comment.comment.replace("_", " "),
-							datetime: comment.datetime.replace("_", " "),
+							// comment: comment.comment.replace("_", " "),
+							comment: comment.comment.split('_').join(' '),
+							// datetime: comment.datetime.replace("_", " "),
+							datetime: comment.datetime.split('_').join(' '),
 							timestamp: comment.timestamp
 						}
 						comment_list.push(item);
