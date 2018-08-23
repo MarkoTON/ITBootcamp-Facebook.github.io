@@ -103,6 +103,7 @@ function getImages(statuses_for_user = null) {
 	http.send(null);
 }
 
+// Gat User info
 function getUsers(get_user = false) {
 	user_list = [];
 	var http = new XMLHttpRequest();
@@ -131,6 +132,7 @@ function getUsers(get_user = false) {
 	http.send(null);
 }
 
+// Loading/Calling functions
 function loadData() {
 	getStatuses();
 	getImages();
@@ -138,6 +140,7 @@ function loadData() {
 	getUserProfile();
 }
 
+// Display Status (comment or image)
 function displayFeeds() {
 	status_div.innerHTML = '';
 	feed_list.forEach(function(feed) {
@@ -174,6 +177,7 @@ function displayFeeds() {
 	});
 }
 
+// Chack for data Status
 function addStatus() {
 	var valid = true;
 	var status_content = document.getElementById("status").value;
@@ -214,6 +218,7 @@ function addStatus() {
 	}
 }
 
+// Add image on some Post
 function addImage() {
 	var image = document.getElementById('image').files[0];
 	var checkbox = document.getElementById('private');
@@ -243,9 +248,11 @@ function addImage() {
 		});
 	} else {
 		errors.innerHTML = '<div class="error-msg">Please choose image.</div>';
+		setTimeout(() =>{errors.innerHTML = ""} , 2000);
 	}
 }
 
+// Add a profile Image
 function changeProfileImage() {
 	errors.innerHTML = '';
 	success.innerHTML = '';
@@ -269,5 +276,6 @@ function changeProfileImage() {
 		});
 	} else {
 		errors.innerHTML = '<div class="error-msg">Plase select image.</div>';
+		setTimeout(() =>{errors.innerHTML = ""} , 2000);
 	}
 }

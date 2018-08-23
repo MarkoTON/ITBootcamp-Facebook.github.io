@@ -21,25 +21,25 @@ function signup() {
 	if(format.test(user.username)) {
 		errors.innerHTML += '<div class="error-msg">Username can\'t contain special characters.</div>';
 		valid = false;
-		setTimeout(() =>{errors.innerHTML = ""} , 1000);
+		setTimeout(() =>{errors.innerHTML = ""} , 2000);
 	}
 	
 	if(format.test(user.password)) {
 		errors.innerHTML += '<div class="error-msg">Password can\'t contain special characters.</div>';
 		valid = false;
-		setTimeout(() =>{errors.innerHTML = ""} , 1000);
+		setTimeout(() =>{errors.innerHTML = ""} , 2000);
 	}
 	
 	if(user.username.length < 5 || user.username.length > 12) {
 		errors.innerHTML += '<div class="error-msg">Username must contain between 5 and 12 characters.</div>';
 		valid = false;
-		setTimeout(() =>{errors.innerHTML = ""} , 1000);
+		setTimeout(() =>{errors.innerHTML = ""} , 2000);
 	}
 	
 	if(user.password.length < 5 || user.password.length > 12) {
 		errors.innerHTML += '<div class="error-msg">Password must contain between 5 and 12 characters.</div>';
 		valid = false;
-		setTimeout(() =>{errors.innerHTML = ""} , 1000);
+		setTimeout(() =>{errors.innerHTML = ""} , 2000);
 	}
 	
 	if(valid) {
@@ -55,7 +55,7 @@ function signup() {
 				var data = JSON.parse(http.responseText);
 				if(data.success != '') {
 					success.innerHTML = '<div class="success-msg">New user registered.</div>';
-					setTimeout(() =>{success.innerHTML = ""} , 2000);
+					setTimeout(() =>{success.innerHTML = ""} , 3000);
 				}
 			}
 		}

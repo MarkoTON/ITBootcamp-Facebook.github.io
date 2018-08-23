@@ -55,6 +55,9 @@ body {
 #login-error {
 	height: 15px;
 	font-size: 10px;
+	margin-top: -15px;
+	margin-bottom: 3px;
+	color: #fff;
 }
 
 /* #user-image img {
@@ -88,6 +91,7 @@ body {
 .error-msg {
 	background: #ff6a30;
 	padding: 10px;
+	margin-bottom: 5px;
 	border-radius: 5px;
 	color: #fdf0e7;
 	font-size: 12px;
@@ -96,6 +100,7 @@ body {
 .success-msg {
 	background: #47b947;
 	padding: 10px;
+	margin-bottom: 5px;
 	border-radius: 5px;
 	color: #eaecea;
 	font-size: 12px;
